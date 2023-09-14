@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='./styles.css'>
+  </head>
+  <body>
+      <h1 id='title'>Practice Survey Form</h1>
+      <p id='description'>Thank you for taking the time to give us your opinions</p>
+      <form id='survey-form' action='https://register.practice' method='post'>
+      <fieldset>
+        <label id='name-label' for='name'>Name: <input id='name' type='text' required name='name' placeholder='First Last'></label>
+        <label id='email-label' for='email'>Email: <input id='email' type='email' required name='email' placeholder='myemail@me.com'></label>
+        <label id='number-label' for='number'>Age (yrs): <input id='number' type='number' name='age' min='18' max='150' placeholder='18'></label>
+      </fieldset>
+      <fieldset>
+        <label for='dropdown'>Which option best describes you? 
+          <select id='dropdown' name='role'>
+            <option value='1'>Opinionated</option>
+            <option value='2'>Conforming</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you like filling out surveys?</legend>
+        <label for='recommend'><input type='radio' name='rating' id='recommend' class='inline' value='recommend'> Definitely</label>
+        <label for='do-not-recommend'><input type='radio' name='rating' id='do-not-recommend' class='inline' value='do-not-recommend'> Nah</label>
+      </fieldset>
+      <fieldset>
+        <legend>Can we contact you in the future?</legend>
+        <label for='of-course'><input type='checkbox' id='of-course' name='contact' value='of-course' class='inline'> Of Course</label>
+        <label for='sure'><input type='checkbox' id='sure' name='contact' value='sure' class='inline'> I Guess So</label>
+        <label for='no'><input type='checkbox' id='no' name='no' value='no' class='inline'> Hard No</label>
+      </fieldset>
+      <fieldset>
+        <label for='comments'>Additional comments: <textarea id='comments' name='comments' placeholder='Enter comments here...' rows='3' cols='30'></textarea></label>
+      </fieldset>
+      <button type='submit' id='submit'>Submit</button>
+      </form>
+  </body>
+</html>

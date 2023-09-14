@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 127, 166, 0.3);
+ font-family: sans-serif;
+ font-size: 16px;
+}
+
+h1, p {
+  text-align: center;
+
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-top: 10px;
+  border: none;
+
+}
+
+label {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin: 10px 0 0 0;
+  line-height: 1.7;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  
+}
+
+button {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
